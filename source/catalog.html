@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -40,7 +44,13 @@
       <div class="products__wrapper container">
         <h1 class="products__title title">Каталог продукции</h1>
         <article class="products__item product-card" id="catalog-pro">
-          <a class="product-card__image-link" href="#"><img class="product-card__image" alt="Питание для кошек с курицей маленькая баночка." width="140" height="107" src="#"></a>
+          <a class="product-card__image-link" href="#">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-chicken500-desktop@1x.png 1x, images/card-chicken500-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-chicken500-tablet@1x.png 1x, images/card-chicken500-tablet@2x.png 2x">
+              <img class="product-card__image" alt="Питание для кошек с курицей маленькая баночка." width="140" height="107" src="images/card-chicken500-mobile@1x.png" srcset="images/card-chicken500-mobile@2x.png 2x">
+            </picture>
+          </a>
           <div class="product-card__info">
             <a class="product-card__title-link" href="#">
               <h2 class="product-card__title">Cat Energy PRO
@@ -64,7 +74,13 @@
           <a class="product-card__link button button--primary" href="#">Заказать</a>
         </article>
         <article class="products__item product-card">
-          <a class="product-card__image-link" href="#"><img class="product-card__image" alt="Питание для кошек с курицей большая баночка." width="140" height="107" src="#"></a>
+          <a class="product-card__image-link" href="#">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-chicken1000-desktop@1x.png 1x, images/card-chicken1000-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-chicken1000-tablet@1x.png 1x, images/card-chicken1000-tablet@2x.png 2x">
+              <img class="product-card__image" alt="Питание для кошек с курицей большая баночка." width="140" height="107" src="images/card-chicken1000-mobile@1x.png" srcset="images/card-chicken1000-mobile@2x.png 2x">
+            </picture>
+          </a>
           <div class="product-card__info">
             <a class="product-card__title-link" href="#">
               <h2 class="product-card__title">Cat Energy PRO
@@ -88,7 +104,13 @@
           <a class="product-card__link button button--primary" href="#">Заказать</a>
         </article>
         <article class="products__item product-card">
-          <a class="product-card__image-link" href="#"><img class="product-card__image" alt="Питание для кошек с рыбой маленькая баночка." width="140" height="107" src="#"></a>
+          <a class="product-card__image-link" href="#">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-fish500-desktop@1x.png 1x, images/card-fish500-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-fish500-tablet@1x.png 1x, images/card-fish500-tablet@2x.png 2x">
+              <img class="product-card__image" alt="Питание для кошек с рыбой маленькая баночка." width="140" height="107" src="images/card-fish500-mobile@1x.png" srcset="images/card-fish500-mobile@2x.png 2x">
+            </picture>
+          </a>
           <div class="product-card__info">
             <a class="product-card__title-link" href="#">
               <h2 class="product-card__title">Cat Energy PRO
@@ -112,7 +134,13 @@
           <a class="product-card__link button button--primary" href="#">Заказать</a>
         </article>
         <article class="products__item product-card">
-          <a class="product-card__image-link" href="#"><img class="product-card__image" alt="Питание для кошек с рыбой большая баночка." width="140" height="107" src="#"></a>
+          <a class="product-card__image-link" href="#">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-fish1000-desktop@1x.png 1x, images/card-fish1000-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-fish1000-tablet@1x.png 1x, images/card-fish1000-tablet@2x.png 2x">
+              <img class="product-card__image" alt="Питание для кошек с рыбой большая баночка." width="140" height="107" src="images/card-fish1000-mobile@1x.png" srcset="images/card-fish1000-mobile@2x.png 2x">
+            </picture>
+          </a>
           <div class="product-card__info">
             <a class="product-card__title-link" href="#">
               <h2 class="product-card__title">Cat Energy PRO
@@ -136,7 +164,13 @@
           <a class="product-card__link button button--primary" href="#">Заказать</a>
         </article>
         <article class="products__item product-card" id="catalog-slim">
-          <a class="product-card__image-link" href="#"><img class="product-card__image" alt="Питание для кошек с гречкой маленькая баночка." width="140" height="107" src="#"></a>
+          <a class="product-card__image-link" href="#">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-buckwheat500-desktop@1x.png 1x, images/card-buckwheat500-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-buckwheat500-tablet@1x.png 1x, images/card-buckwheat500-tablet@2x.png 2x">
+              <img class="product-card__image" alt="Питание для кошек с гречкой маленькая баночка." width="140" height="107" src="images/card-buckwheat500-mobile@1x.png" srcset="images/card-buckwheat500-mobile@2x.png 2x">
+            </picture>
+          </a>
           <div class="product-card__info">
             <a class="product-card__title-link" href="#">
               <h2 class="product-card__title">Cat Energy SLIM
@@ -160,7 +194,13 @@
           <a class="product-card__link button button--primary" href="#">Заказать</a>
         </article>
         <article class="products__item product-card">
-          <a class="product-card__image-link" href="#"><img class="product-card__image" alt="Питание для кошек с гречкой маленькая баночка." width="140" height="107" src="#"></a>
+          <a class="product-card__image-link" href="#">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-buckwheat1000-desktop@1x.png 1x, images/card-buckwheat1000-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-buckwheat1000-tablet@1x.png 1x, images/card-buckwheat1000-tablet@2x.png 2x">
+              <img class="product-card__image" alt="Питание для кошек с гречкой большая баночка." width="140" height="107" src="images/card-buckwheat1000-mobile@1x.png" srcset="images/card-buckwheat1000-mobile@2x.png 2x">
+            </picture>
+          </a>
           <div class="product-card__info">
             <a class="product-card__title-link" href="#">
               <h2 class="product-card__title">Cat Energy SLIM
@@ -184,7 +224,13 @@
           <a class="product-card__link button button--primary" href="#">Заказать</a>
         </article>
         <article class="products__item product-card">
-          <a class="product-card__image-link" href="#"><img class="product-card__image" alt="Питание для кошек с рисом маленькая баночка." width="140" height="107" src="#"></a>
+          <a class="product-card__image-link" href="#">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/card-rice500-desktop@1x.png 1x, images/card-rice500-desktop@2x.png 2x">
+              <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/card-rice500-tablet@1x.png 1x, images/card-rice500-tablet@2x.png 2x">
+              <img class="product-card__image" alt="Питание для кошек с рисом маленькая баночка." width="140" height="107" src="images/card-rice500-mobile@1x.png" srcset="images/card-rice500-mobile@2x.png 2x">
+            </picture>
+          </a>
           <div class="product-card__info">
             <a class="product-card__title-link" href="#">
               <h2 class="product-card__title">Cat Energy SLIM
@@ -267,7 +313,7 @@
         <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscribe__form form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Укажите ваш Email</label>
-          <input class="form__control" id="email" placeholder="кuklachev@gmail.com" type="email" name="subscribe__email" required>
+          <input class="form__control" id="email" placeholder="kuklachev@gmail.com" type="email" name="subscribe__email" required>
           <button class="form__button button button--primary" type="submit">Подписаться</button>
         </form>
       </div>
@@ -282,7 +328,11 @@
             Санкт-Петербург</address>
         </div>
         <div class="invitation__map">
-          <img class="invitation__map-image" alt="Расположение торговой точки." src="#" width="100" height="100">
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img class="invitation__map-image" alt="Расположение торговой точки." src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362">
+          </picture>
         </div>
       </div>
     </section>

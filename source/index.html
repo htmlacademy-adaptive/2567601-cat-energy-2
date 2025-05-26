@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -43,7 +47,11 @@
             питание для котов</h1>
           <p class="hero__description">Занялся собой? Займись котом!</p>
         </div>
-        <img class="hero__image" alt="Кошачье питание в оранжевой баночке." src="#" width="100" height="100">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-tablet@1x.png 1x, images/hero-tablet@2x.png 2x">
+          <img class="hero__image" alt="Кошачье питание в оранжевой баночке." src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x" width="280" height="270">
+        </picture>
         <button class="hero__button button button--primary" type="button">Подобрать программу</button>
       </div>
     </section>
@@ -111,13 +119,19 @@
           </div>
         </div>
         <div class="example__slider slider">
-          <img class="slider__image slider__image--before" alt="Упитанный кот." src="#" width="280" height="256">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/begore-cat-tablet@1x.png 1x, images/begore-cat-tablet@2x.png 2x">
+            <img class="slider__image slider__image--before" alt="Упитанный кот." src="images/before-cat-mobile@1x.png" srcset="images/before-cat-mobile@2x.png 2x" width="280" height="256">
+          </picture>
           <div class="slider__range">
             <button class="slider__button" type="button">
               <span class="visually-hidden">Элемент управления слайдером</span>
             </button>
           </div>
-          <img class="slider__image slider__image--after" alt="Худой кот." src="#" width="280" height="256">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/after-cat-tablet@1x.png 1x, images/after-cat-tablet@2x.png 2x">
+            <img class="slider__image slider__image--after" alt="Худой кот." src="images/after-cat-mobile@1x.png" srcset="images/after-cat-mobile@2x.png 2x" width="280" height="256">
+          </picture>
         </div>
       </div>
     </section>
@@ -131,7 +145,11 @@
             Санкт-Петербург</address>
         </div>
         <div class="invitation__map">
-          <img class="invitation__map-image" alt="Расположение торговой точки." src="#" width="100" height="100">
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img class="invitation__map-image" alt="Расположение торговой точки." src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362">
+          </picture>
         </div>
       </div>
     </section>
