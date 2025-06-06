@@ -1,0 +1,22 @@
+.product-card__title-link {
+  @include base-link(#222222);
+}
+
+.product-card__title {
+  @include subtitle;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.product-card__list {
+  @include base-list;
+}
+
+.product-card__item {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product-card__link {
+  @include base-link(#ffffff);
+}

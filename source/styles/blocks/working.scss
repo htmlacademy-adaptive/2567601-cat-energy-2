@@ -1,0 +1,8 @@
+.working__list {
+  @include base-list;
+}
+
+.working__item-description {
+  font-size: 14px;
+  line-height: 18px;
+}

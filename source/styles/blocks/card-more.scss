@@ -1,0 +1,14 @@
+.card-more__title {
+  @include subtitle;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card-more__description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card-more__button {
+  @include base-link(#444444);
+}

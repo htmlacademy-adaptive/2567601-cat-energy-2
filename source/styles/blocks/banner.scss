@@ -1,0 +1,11 @@
+.banner__wrapper {
+  background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), image-set("../images/hero-background@1x.jpg" 1x type("image/jpg"), "../images/hero-background@2x.jpg" 2x type("image/jpg"));
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner__text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+}

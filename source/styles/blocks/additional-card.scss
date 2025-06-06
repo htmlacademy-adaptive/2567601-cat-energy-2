@@ -1,0 +1,14 @@
+.additional-card__title {
+  @include subtitle;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.additional-card__info {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-card__button {
+  text-decoration: none;
+}

@@ -1,0 +1,22 @@
+.service-card {
+  background-color: $additional-bg-color;
+}
+
+.service-card__title {
+  @include subtitle;
+  color: $additional-color-text;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.service-card__description {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.service-card__link {
+  @include base-link($additional-color-text);
+  @include subtitle;
+  font-size: 16px;
+  line-height: 16px;
+}

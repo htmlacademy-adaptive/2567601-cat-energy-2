@@ -1,0 +1,15 @@
+.main-nav {
+  background-color: #ffffff;
+  font-family: $additional-font;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.main-nav__list {
+  @include base-list;
+}
+
+.main-nav__link {
+  @include base-link(#000000);
+  text-transform: uppercase;
+}

@@ -1,0 +1,5 @@
+.form__control {
+  @include subtitle;
+  font-size: 20px;
+  color: $primary-color-text;
+}

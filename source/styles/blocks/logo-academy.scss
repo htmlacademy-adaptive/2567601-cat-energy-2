@@ -1,0 +1,5 @@
+.logo-academy__link {
+  @include base-link($primary-color-text);
+  font-size: 14px;
+  line-height: 20px;
+}

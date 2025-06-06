@@ -1,0 +1,7 @@
+.social-list {
+  @include base-list;
+}
+
+.social-list__link {
+  @include base-link($additional-color-text);
+}
