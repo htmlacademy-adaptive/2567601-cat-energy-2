@@ -1,5 +1,39 @@
 .service-card {
   background-color: $additional-bg-color;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: $primary-bg-color;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 21px;
+}
+
+.service-card::after {
+  content: "";
+  display: block;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+  top: 18px;
+}
+
+.service-card--slim::after {
+  background: url("../../icons/stack.svg#cat-slim") no-repeat;
+  width: 36px;
+  left: 27px;
+}
+
+.service-card--pro::after {
+  background: url("../../icons/stack.svg#cat-pro") no-repeat;
+  width: 67px;
+  left: 10px;
 }
 
 .service-card__title {
@@ -7,7 +41,10 @@
   color: $additional-color-text;
   font-size: 24px;
   line-height: 37px;
+  margin: 0 0 0 29px;
+  padding-left: 40px;
 }
+
 
 .service-card__description {
   font-size: 14px;
@@ -19,4 +56,17 @@
   @include subtitle;
   font-size: 16px;
   line-height: 16px;
+  position: relative;
+}
+
+.service-card__link::after {
+  content: "";
+  display: block;
+  top: 5px;
+  right: -40px;
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  mask-image: url("../../icons/stack.svg#arrow");
+  background-color: #000000;
 }

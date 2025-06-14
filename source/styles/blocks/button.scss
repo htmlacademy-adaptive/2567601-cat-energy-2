@@ -4,6 +4,11 @@
   line-height: 20px;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .button--primary {

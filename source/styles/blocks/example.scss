@@ -2,6 +2,24 @@
   background-color: $additional-bg-color;
 }
 
+.example__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.example__checklist {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr;
+  }
+}
+
 .example__description {
   font-size: 14px;
   line-height: 18px;
@@ -9,6 +27,7 @@
 
 .example__list {
   @include base-list;
+  display: flex;
 }
 
 .example__item-subtitle {
@@ -28,4 +47,10 @@
   line-height: 20px;
   color: $additional-color-text;
   font-family: $additional-font;
+  justify-self: end;
+
+  @media (min-width: $desktop) {
+    justify-self: start;
+    display: flex;
+  }
 }

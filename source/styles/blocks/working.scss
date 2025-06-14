@@ -1,8 +1,61 @@
 .working__list {
   @include base-list;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 70px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.working__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop) {
+    width: 230px;
+  }
+}
+
+.working__item::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-bg-color;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.working__item--useful::before {
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-size: 30px 32px;
+}
+
+.working__item--powder::before {
+  background-image: url("../../icons/stack.svg#icon-powder");
+  background-size: 26px 29px;
+}
+
+.working__item--change::before {
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-size: 25px 30px;
+}
+
+.working__item--result::before {
+  background-image: url("../../icons/stack.svg#icon-time");
+  background-size: 26px 31px;
 }
 
 .working__item-description {
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
 }

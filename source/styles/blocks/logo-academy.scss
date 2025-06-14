@@ -2,4 +2,23 @@
   @include base-link($primary-color-text);
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+    gap: 23px;
+  }
+}
+
+.logo-academy__link::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../icons/stack.svg#logo-html");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  justify-self: end;
 }

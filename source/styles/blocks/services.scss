@@ -1,3 +1,21 @@
 .services__list {
   @include base-list;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+}
+
+.services__item {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+  }
 }

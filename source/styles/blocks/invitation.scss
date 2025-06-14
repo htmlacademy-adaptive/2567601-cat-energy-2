@@ -1,1 +1,17 @@
-//
+.invitation__text {
+  @media (min-width: $desktop) {
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    left: 110px;
+  }
+}
+
+.invitation__wrapper {
+  position: relative;
+}
+
+.invitation__map-image {
+  display: block;
+  width: 100%;
+}
