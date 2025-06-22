@@ -1,7 +1,9 @@
 .social-list {
-  @include base-list;
+  list-style: none;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 
   @media (min-width: $tablet) {
@@ -36,4 +38,17 @@
 .social-list__link--telegramm::before {
   mask-image: url("../../icons/stack.svg#icon-tg");
   background-color: #666666;
+}
+
+.social-list__link:hover::before {
+  background-color: $primary-bg-color;
+}
+
+.social-list__link:focus::before {
+  background-color: $primary-bg-color;
+}
+
+.social-list__link:active::before {
+  background-color: $primary-bg-color;
+  opacity: 0.3;
 }

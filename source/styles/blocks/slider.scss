@@ -2,6 +2,35 @@
   position: relative;
 }
 
+.slider__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+  }
+}
+
+.slider__image {
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__image--before {
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider__image--after {
+  clip-path: inset(0 0 0 50%);
+}
+
 .slider__button {
   cursor: pointer;
   width: 4px;
@@ -13,6 +42,7 @@
   position: absolute;
   top: 0;
   left: 50%;
+  padding: 0;
   right: 50%;
 }
 
@@ -44,4 +74,43 @@
   transform: translate(-50%, -50%);
   position: absolute;
   height: 40px;
+}
+
+.slider__button:hover {
+  background-color: $primary-bg-color;
+}
+
+.slider__button:hover::after {
+  background-color: $primary-bg-color;
+}
+
+.slider__button:hover::before {
+  border-color: $primary-bg-color;
+}
+
+.slider__button:focus {
+  background-color: $primary-bg-color;
+}
+
+.slider__button:focus::after {
+  background-color: $primary-bg-color;
+}
+
+.slider__button:focus::before {
+  border-color: $primary-bg-color;
+}
+
+.slider__button:active {
+  background-color: #5eaa2f;
+  opacity: 0.6;
+}
+
+.slider__button:active::after {
+  background-color: #5eaa2f;
+  opacity: 0.6;
+}
+
+.slider__button:active::before {
+  border-color: #5eaa2f;
+  opacity: 0.6;
 }

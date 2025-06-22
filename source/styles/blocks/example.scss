@@ -1,56 +1,172 @@
 .example {
-  background-color: $additional-bg-color;
+  background-color: #eaeaea;
+  padding-block: 20px 35px;
+
+  @media (min-width: $tablet) {
+    padding-block: 45px 98px;
+    background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 462px, #ffffff 100%);
+  }
+
+  @media (min-width: $desktop) {
+    padding-block: 30px;
+    background-image: linear-gradient(#ffffff 145px, $additional-bg-color 145px, $additional-bg-color 100%);
+  }
+}
+
+.example__text {
+  @media (min-width: $tablet) {
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 436px;
+    margin-bottom: 26px;
+  }
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 35px;
+  line-height: 40px;
+
+  @media (min-width: $tablet) {
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 146px;
+  }
 }
 
 .example__wrapper {
   @media (min-width: $desktop) {
     display: flex;
+    gap: 224px;
   }
 }
 
 .example__checklist {
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr;
+    gap: 51px;
   }
 }
 
 .example__description {
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 56px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 69px;
+  }
 }
 
 .example__list {
   @include base-list;
   display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    gap: 43px;
+    margin-bottom: 0;
+  }
 }
 
 .example__item-subtitle {
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   color: $additional-color-text;
   font-family: $additional-font;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 124px;
+  min-height: 56px;
+
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    width: 162px;
+    min-height: 72px;
+    line-height: 37px;
+  }
 }
 
 .example__item-signature {
   font-size: 12px;
   line-height: 12px;
+  margin: -10px auto 0;
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 0 10px;
+  width: min-content;
+
+  @media (min-width: $tablet) {
+    line-height: 14px;
+    width: max-content;
+    max-width: 145px;
+    padding: 0 5px;
+    display: flex;
+    background-color: #ffffff;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $additional-bg-color;
+  }
 }
 
 .example__summary {
   font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
   line-height: 20px;
   color: $additional-color-text;
   font-family: $additional-font;
   justify-self: end;
 
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    text-align: right;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
   @media (min-width: $desktop) {
     justify-self: start;
     display: flex;
+    gap: 65px;
+  }
+}
+
+.example__slider {
+  @media (min-width: $desktop) {
+    height: 512px;
   }
 }

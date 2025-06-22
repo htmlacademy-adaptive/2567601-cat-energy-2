@@ -1,3 +1,7 @@
+.services {
+  background-color: #ffffff;
+}
+
 .services__list {
   @include base-list;
 
@@ -10,9 +14,12 @@
 
 .services__item {
   margin-bottom: 20px;
+  min-height: 266px;
 
   @media (min-width: $tablet) {
     margin-bottom: 30px;
+    min-height: 372px;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop) {
