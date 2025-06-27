@@ -2,7 +2,7 @@
   padding: 0 0 29px;
 
   @media (min-width: $tablet) {
-    padding: 30px 0 0;
+    padding: 15px 0 0;
   }
 
   @media (min-width: $desktop) {
@@ -24,12 +24,12 @@
 
 .working__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   line-height: 40px;
 
   @media (min-width: $tablet) {
     line-height: 60px;
-    margin-bottom: 72px;
+    margin-bottom: 75px;
   }
 }
 

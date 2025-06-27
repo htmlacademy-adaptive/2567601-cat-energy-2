@@ -11,20 +11,20 @@
 }
 
 .banner__wrapper {
-  background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), image-set("../images/banner-background-mobile@1x.jpg" 1x type("image/jpg"), "../images/banner-background-mobile@2x.jpg" 2x type("image/jpg")), linear-gradient(#333333);
+  background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), image-set("../images/banner-background-mobile@1x.webp" 1x type("image/webp"), "../images/banner-background-mobile@2x.webp" 2x type("image/webp"), "../images/banner-background-mobile@1x.jpg" 1x type("image/jpg"), "../images/banner-background-mobile@2x.jpg" 2x type("image/jpg")), linear-gradient(#333333);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 59px 58px 44px;
   background-position: center;
 
   @media (min-width: $tablet) {
-    background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), image-set("../images/banner-background-tablet@1x.jpg" 1x type("image/jpg"), "../images/banner-background-tablet@2x.jpg" 2x type("image/jpg")), linear-gradient(#333333);
+    background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), image-set("../images/banner-background-tablet@1x.webp" 1x type("image/webp"), "../images/banner-background-tablet@2x.webp" 2x type("image/webp"), "../images/banner-background-tablet@1x.jpg" 1x type("image/jpg"), "../images/banner-background-tablet@2x.jpg" 2x type("image/jpg")), linear-gradient(#333333);
     padding: 57px 125px 62px 75px;
   }
 
   @media (min-width: $desktop) {
     padding: 56px 42px 45px;
-    background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), image-set("../images/banner-background-desktop@1x.jpg" 1x type("image/jpg"), "../images/banner-background-desktop@2x.jpg" 2x type("image/jpg")), linear-gradient(#333333);
+    background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85)), image-set("../images/banner-background-desktop@1x.webp" 1x type("image/webp"), "../images/banner-background-desktop@2x.webp" 2x type("image/webp"), "../images/banner-background-desktop@1x.jpg" 1x type("image/jpg"), "../images/banner-background-desktop@2x.jpg" 2x type("image/jpg")), linear-gradient(#333333);
   }
 }
 

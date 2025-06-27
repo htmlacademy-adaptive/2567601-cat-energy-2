@@ -1,15 +1,15 @@
 .example {
   background-color: #eaeaea;
-  padding-block: 20px 35px;
+  padding-block: 28px 35px;
 
   @media (min-width: $tablet) {
-    padding-block: 45px 98px;
+    padding-block: 45px 95px;
     background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 462px, #ffffff 100%);
   }
 
   @media (min-width: $desktop) {
     padding-block: 30px;
-    background-image: linear-gradient(#ffffff 145px, $additional-bg-color 145px, $additional-bg-color 100%);
+    background-image: linear-gradient(#ffffff 165px, $additional-bg-color 165px, $additional-bg-color 100%);
   }
 }
 
@@ -26,7 +26,7 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   line-height: 40px;
 
   @media (min-width: $tablet) {
@@ -68,7 +68,7 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 56px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop) {
@@ -81,7 +81,7 @@
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet) {
     gap: 43px;
@@ -161,6 +161,7 @@
   @media (min-width: $desktop) {
     justify-self: start;
     display: flex;
+    margin-top: 3px;
     gap: 65px;
   }
 }

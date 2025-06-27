@@ -15,7 +15,7 @@
 
 
 .hero__wrapper {
-  background-image: linear-gradient(rgba(#68b738, 0.85) 61%, #ffffff 39%), image-set("../images/hero-background@1x.jpg" 1x type("image/jpg"), "../images/hero-background@2x.jpg" 2x type("image/jpg")), linear-gradient(#444444);
+  background-image: linear-gradient(rgba(#68b738, 0.85) 61%, #ffffff 39%), image-set("../images/hero-background@1x.webp" 1x type("image/webp"), "../images/hero-background@2x.webp" 2x type("image/webp"), "../images/hero-background@1x.jpg" 1x type("image/jpg"), "../images/hero-background@2x.jpg" 2x type("image/jpg")), linear-gradient(#444444);
   background-position: top;
   background-repeat: no-repeat;
   display: grid;
@@ -36,7 +36,7 @@
 
 .hero__wrapper::before {
   @media (min-width: $desktop) {
-    background-image: linear-gradient(to right, #ffffff 50%, rgba(#68b738, 0.85) 50%), image-set("../images/hero-background-desktop@1x.jpg" 1x type("image/jpg"), "../images/hero-background-desktop@2x.jpg" 2x type("image/jpg")), linear-gradient(#8c8b8b);
+    background-image: linear-gradient(to right, #ffffff 50%, rgba(#68b738, 0.85) 50%), image-set("../images/banner-background-desktop@1x.webp" 1x type("image/webp"), "../images/hero-background-desktop@2x.webp" 2x type("image/webp"), "../images/hero-background-desktop@1x.jpg" 1x type("image/jpg"), "../images/hero-background-desktop@2x.jpg" 2x type("image/jpg")), linear-gradient(#8c8b8b);
     background-position: center, right top;
     background-size: 100%, 720px 694px;
     background-repeat: no-repeat;
