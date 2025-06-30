@@ -1,0 +1,86 @@
+.additional-card {
+  padding-block: 12px 18px;
+
+  @media (min-width: $tablet) {
+    padding: 25px 38px 28px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: max-content auto;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 16px;
+  }
+}
+
+.additional-card__title {
+  @include subtitle;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 13px;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    width: 200px;
+    margin-right: 85px;
+  }
+}
+
+.additional-card__info {
+  font-size: 14px;
+  margin: 0;
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    justify-content: flex-end;
+    gap: 49px;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: space-between;
+    margin: auto 5px auto 0;
+    width: 285px;
+  }
+}
+
+.additional-card__volume {
+  margin: 0;
+}
+
+.additional-card__price {
+  margin: 0;
+}
+
+.additional-card__button {
+  text-decoration: none;
+  padding: 10px 30px;
+  min-width: 100%;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    grid-column: 1/ -1;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 244px;
+  }
+}

@@ -1,0 +1,51 @@
+.invitation__text {
+  @media (min-width: $desktop) {
+    margin-top: 95px;
+    margin-left: calc(110px + (100vw - 1440px)/2);
+    margin-bottom: 106px;
+    position: relative;
+    width: 565px;
+    min-height: 199px;
+  }
+}
+
+.invitation__wrapper {
+  @media (min-width: $tablet) {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.invitation__wrapper--color {
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop) {
+    background-color: #ffffff;
+  }
+}
+
+.invitation__map {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.invitation__map iframe {
+  width: 100%;
+  display: block;
+  border: none;
+
+  @media (min-width: $tablet) {
+    min-height: 400px;
+    height: 100%;
+  }
+}
+
+.invitation__map-image {
+  display: block;
+  min-width: 100%;
+}

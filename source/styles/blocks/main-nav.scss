@@ -1,0 +1,118 @@
+.main-nav {
+  z-index: 1;
+  background-color: #ffffff;
+  font-family: $additional-font;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.main-nav__list {
+  @include base-list;
+
+  @media (min-width: $tablet) {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 33px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 90px;
+  }
+}
+
+.main-nav__item {
+  border-top: 1px solid #e6e6e6;
+  padding-block: 22px 24px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    border: 0;
+    padding: 0;
+    position: relative;
+  }
+}
+
+.main-nav__item--current::before {
+  @media (min-width: $tablet) {
+    content: "";
+    display: block;
+    width: 100%;
+    top: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    background-color: $primary-bg-color;
+    height: 2px;
+    transition: all 0.3s ease;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: #ffffff;
+    top: 31px;
+  }
+}
+
+.main-nav__item--current-catalog::before {
+  @media (min-width: $tablet) {
+    content: "";
+    display: block;
+    width: 100%;
+    top: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    background-color: $primary-bg-color;
+    height: 2px;
+    transition: all 0.3s ease;
+  }
+
+  @media (min-width: $desktop) {
+    color: $primary-bg-color;
+    top: 31px;
+  }
+}
+
+.main-nav__link {
+  @include base-link($additional-color-text);
+  text-transform: uppercase;
+  padding: 10px;
+
+  @media (min-width: $tablet) {
+    padding-inline: 0;
+  }
+
+  @media (min-width: $desktop) {
+    color: #ffffff;
+  }
+}
+
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:focus {
+  opacity: 0.6;
+}
+
+.main-nav__link:active {
+  opacity: 0.4;
+}
+
+.main-nav__link--dark {
+  color: $additional-color-text;
+}

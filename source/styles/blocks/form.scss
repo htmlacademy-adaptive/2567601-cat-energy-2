@@ -1,0 +1,44 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 3fr 2fr;
+    align-self: stretch;
+    padding-bottom: 40px;
+    padding-inline: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 752px;
+    margin: 0 auto;
+    padding-bottom: 62px;
+  }
+}
+
+.form__control {
+  @include subtitle;
+  font-size: 20px;
+  padding: 12px 13px 11px;
+  color: $primary-color-text;
+  margin-bottom: 16px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    border-right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 496px;
+  }
+}
+
+.form__button {
+  width: 100%;
+  font-size: 20px;
+  line-height: 26px;
+  display: block;
+  text-align: center;
+  padding: 15px 30px;
+}

@@ -1,0 +1,90 @@
+.card-more {
+  background-color: inherit;
+  padding-top: 25px;
+
+  @media (min-width: $tablet) {
+    padding-top: 80px;
+  }
+}
+
+.card-more__wrapper {
+  @media (min-width: $tablet) {
+    border: 1px solid #ebebeb;
+    min-height: 429px;
+    padding: 50px 37px 40px;
+  }
+}
+
+.card-more__info {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 82px;
+    width: 170px;
+    margin-inline: auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 90px;
+  }
+}
+
+.card-more__title {
+  @include subtitle;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 23px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 40px;
+  }
+}
+
+.card-more__title::before {
+  content: "";
+  display: block;
+  width: 30px;
+  margin: 0;
+  height: 30px;
+  background: url("../../icons/stack.svg#icon-more");
+
+  @media (min-width: $tablet) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.card-more__description {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.card-more__button {
+  @include base-link(#444444);
+  padding: 10px 30px;
+  min-width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+}

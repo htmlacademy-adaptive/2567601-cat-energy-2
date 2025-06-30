@@ -1,0 +1,10 @@
+.title {
+  color: $additional-color-text;
+  font-family: $additional-font;
+  font-size: 36px;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,47 @@
+.button {
+  font-family: $additional-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.button--primary {
+  color: #ffffff;
+  background-color: $primary-bg-color;
+}
+
+.button--primary:hover {
+  background-color: #5eaa2f;
+}
+
+.button--primary:active {
+  color: rgba(#ffffff, 30%);
+  background-color: #5eaa2f;
+}
+
+.button--primary:focus {
+  background-color: #5eaa2f;
+}
+
+.button--secondary {
+  color: $primary-color-text;
+  background-color: $additional-bg-color;
+}
+
+.button--secondary:hover {
+  background-color: #ebebeb;
+}
+
+.button--secondary:focus {
+  background-color: #ebebeb;
+}
+
+.button--secondary:active {
+  background-color: #ebebeb;
+}
