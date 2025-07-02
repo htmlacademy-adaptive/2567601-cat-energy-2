@@ -41,6 +41,13 @@
   }
 }
 
+.subscribe__form {
+  @media (min-width: $desktop) {
+    width: 752px;
+    margin: 0 auto;
+  }
+}
+
 .subscribe__title::before {
   @media (min-width: $tablet) {
     content: "";
