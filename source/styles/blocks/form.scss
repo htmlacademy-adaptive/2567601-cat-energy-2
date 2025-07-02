@@ -10,8 +10,6 @@
   }
 
   @media (min-width: $desktop) {
-    width: 752px;
-    margin: 0 auto;
     padding-bottom: 62px;
   }
 }
@@ -32,6 +30,14 @@
   @media (min-width: $desktop) {
     width: 496px;
   }
+}
+
+.form__control:hover {
+  border: 1px solid #9f9c9c;
+}
+
+.form__control:focus {
+  border: 1px solid #9f9c9c;
 }
 
 .form__button {

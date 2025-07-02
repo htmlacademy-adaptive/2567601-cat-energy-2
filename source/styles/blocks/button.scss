@@ -45,3 +45,7 @@
 .button--secondary:active {
   background-color: #ebebeb;
 }
+
+.button:disabled {
+  background-color: #bbb8b8;
+}
